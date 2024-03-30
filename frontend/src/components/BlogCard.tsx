@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 interface BlogCardInput{
-    id : number
+    id : string
     authorName :string,
     title :string
     content : string
     publishedDate: string
 }
-function Circle(){
+export function Circle(){
     return <div className='h-1 w-1 rounder-full bg-slate-600' >
 
     </div>
@@ -21,7 +21,7 @@ content,
 publishedDate}:BlogCardInput) => {
   
   return <Link to={`/blog/${id}`}> 
-    <div className='border-b pb-4 border-slate-200 p-4 w-screen min-w-screen-md cursor-pointer'>
+    <div className='border-b pb-4 border-slate-200 p-4 min-w-screen-md cursor-pointer'>
         <div className='flex px-2'>
         <Avatar name={authorName}></Avatar>
         <div className='font-extralight pl-2 text-sm flex justify-center flex-col'>{authorName} </div>

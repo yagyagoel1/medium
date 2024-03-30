@@ -4,7 +4,7 @@ import { BACKEND_URL } from '../config';
  export interface BlogInput{
     content : string,
     title : string,
-    id : number,
+    id : string,
     editor: {
         name : string
     }
@@ -40,7 +40,7 @@ const useBlogs = () => {
                 Authorization : localStorage.getItem("token")
             } })
         .then(response=>{
-            setBlogs(response.data.blogs);
+            setBlogs(response.data.blog);
             setLoading(false);
 
         })
