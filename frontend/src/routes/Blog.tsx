@@ -8,7 +8,7 @@ const Blog = () => {
   const {loading,blog} = useBlog({
     id : id||""
   });
-  if(loading)
+  if(loading||!blog)
   {
     return <div><AppBar></AppBar>
     <div className='h-screen flex flex-col justify-center'>
