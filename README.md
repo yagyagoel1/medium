@@ -1,4 +1,4 @@
-# Full Stack Blogging Platform
+# Medium Full stack clone
 
 This project is a full-stack blogging platform with separate frontend, backend, and common validation schemas. It enables users to sign up, sign in, create, update, and view blog posts. The project leverages modern web technologies for both the frontend and backend, ensuring a seamless user experience and robust functionality.
 
